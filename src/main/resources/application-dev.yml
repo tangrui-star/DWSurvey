@@ -54,11 +54,11 @@ spring:
   datasource:
     #type: com.alibaba.druid.pool.DruidDataSource
     # 连接URL
-    url: jdbc:mysql://localhost:3306/dwsurvey?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/survey?useUnicode=true&characterEncoding=utf8
     # 连接账号
     username: root
     # 连接密码
-    password: 123456,.
+    password: 12345678
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 5
