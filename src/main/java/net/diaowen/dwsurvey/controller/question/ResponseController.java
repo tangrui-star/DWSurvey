@@ -433,12 +433,13 @@ public class ResponseController {
 
 
 	/**
-	 * 获取问卷详情
+	 * 获取问卷详情application/json;charset=ISO-8859-1
 	 * @return
 	 */
 	@RequestMapping(value = "/survey.do")
 	public String survey(HttpServletRequest request, HttpServletResponse response, String sid,String surveyId) {
 		try {
+			response.setContentType("application/json");
 			if(StringUtils.isEmpty(sid) && StringUtils.isNotEmpty(surveyId)){
 				SurveyDirectory surveyDirectory = directoryManager.get(surveyId);
 				sid = surveyDirectory.getSid();
